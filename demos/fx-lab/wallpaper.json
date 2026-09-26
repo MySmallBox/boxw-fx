@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "id": "fx-lab",
+  "name": "FX Lab - 粒子波纹（boxw-fx 演示）",
+  "version": "1.0.0",
+  "author": "BoxWallpaper",
+  "type": "live",
+  "entry": "index.html",
+  "thumbnail": null,
+  "capabilities": { "mouse": true, "audio": true },
+  "params": [
+    { "id": "quality", "label": "画质", "type": "select", "default": "mid", "group": "画质",
+      "options": [
+        { "id": "low", "label": "低" },
+        { "id": "mid", "label": "中" },
+        { "id": "high", "label": "高" }
+      ] },
+    { "id": "fx.showFps", "label": "显示帧率", "type": "checkbox", "default": true, "group": "画质" },
+    { "id": "stars.enabled", "label": "背景星空", "type": "checkbox", "default": true, "group": "特效" },
+    { "id": "ripple.enabled", "label": "鼠标涟漪", "type": "checkbox", "default": true, "group": "特效" },
+    { "id": "ripple.strength", "label": "涟漪强度", "type": "slider", "default": 100, "min": 0, "max": 200, "step": 10, "group": "特效" },
+    { "id": "bloom.enabled", "label": "泛光", "type": "checkbox", "default": true, "group": "特效" },
+    { "id": "bloom.intensity", "label": "泛光强度", "type": "slider", "default": 0.85, "min": 0, "max": 1.5, "step": 0.05, "group": "特效" },
+    { "id": "particles.enabled", "label": "粒子场", "type": "checkbox", "default": true, "group": "特效" },
+    { "id": "particles.audioDrive", "label": "音频驱动粒子", "type": "checkbox", "default": true, "group": "特效" }
+  ]
+}

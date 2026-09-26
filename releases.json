@@ -1,0 +1,29 @@
+{
+  "latest": "1",
+  "versions": [
+    {
+      "version": "1",
+      "date": "2026-09-26",
+      "status": "active",
+      "manifest": { "v1/effects.json": "b16576b58d6adf9af1600724d7fec2d93ef848c2753a0bc17bd0662024c14f69" },
+      "files": {
+        "v1/fx-core.js": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3",
+        "v1/effects.json": "b16576b58d6adf9af1600724d7fec2d93ef848c2753a0bc17bd0662024c14f69",
+        "v1/CHANGELOG.md": "1aa480a681d4c074bcb38445b0962fbe7fa834a98ba88ea45977d29b857aabcf",
+        "v1/effects/particles.js": "ff9b7b40c661cd5290935b1aaede824b90a2aaa685962deacacc37bd6d250aef",
+        "v1/effects/ripple.js": "cc49ba20db7755faddbea3ba854dcf1df1c055daf6d1a6af8fed6780daced8d9",
+        "v1/effects/bloom.js": "5c85b0f6d682d3c1f13ae9f81ab8d238cceec620b99d2e35281e2f62e6bcd2af",
+        "v1/effects/stars.js": "b7882b43a0536888d20dc81eafc1d141030203b4f3f744bf6a50d885a2d2411f",
+        "demos/fx-lab/index.html": "8e889be2e25df854f155251faee749a71af7ed27992c293f8f2f38c4dd617066",
+        "demos/fx-lab/main.js": "0fb0f6b8a7cedd7d248d29cedae6e9caefb5cf388d8909d84a62db7813897bcc",
+        "demos/fx-lab/wallpaper.json": "f18779e0a9c0aac2c8fe40f133c5b5d895cfc156751928d027b6f57eec1a3c47",
+        "demos/fx-lab/vendor/fx-core.js": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3",
+        "demos/fx-lab/vendor/effects.json": "b16576b58d6adf9af1600724d7fec2d93ef848c2753a0bc17bd0662024c14f69",
+        "demos/fx-lab/vendor/effects/particles.js": "ff9b7b40c661cd5290935b1aaede824b90a2aaa685962deacacc37bd6d250aef",
+        "demos/fx-lab/vendor/effects/ripple.js": "cc49ba20db7755faddbea3ba854dcf1df1c055daf6d1a6af8fed6780daced8d9",
+        "demos/fx-lab/vendor/effects/bloom.js": "5c85b0f6d682d3c1f13ae9f81ab8d238cceec620b99d2e35281e2f62e6bcd2af",
+        "demos/fx-lab/vendor/effects/stars.js": "b7882b43a0536888d20dc81eafc1d141030203b4f3f744bf6a50d885a2d2411f"
+      }
+    }
+  ]
+}

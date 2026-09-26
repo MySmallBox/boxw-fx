@@ -1,0 +1,64 @@
+{
+  "version": "1",
+  "core": {
+    "file": "fx-core.js",
+    "sha256": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3"
+  },
+  "effects": {
+    "stars": {
+      "name": "背景星空",
+      "description": "程序化星点、中心光晕与微弱闪烁，全屏背景（相当于清屏层）。",
+      "file": "effects/stars.js",
+      "sha256": "b7882b43a0536888d20dc81eafc1d141030203b4f3f744bf6a50d885a2d2411f",
+      "deps": [],
+      "requires": { "webgl2": true },
+      "slots": ["drawScene"],
+      "params": [
+        { "id": "enabled", "type": "checkbox", "label": "启用", "default": true },
+        { "id": "twinkle", "type": "slider", "label": "闪烁幅度", "min": 0, "max": 1, "step": 0.05, "default": 1 }
+      ]
+    },
+    "particles": {
+      "name": "GPU 粒子场",
+      "description": "GPU 计算的流体感粒子（纹理状态 ping-pong），随鼠标推散、可被音频驱动，加色绘制。",
+      "file": "effects/particles.js",
+      "sha256": "ff9b7b40c661cd5290935b1aaede824b90a2aaa685962deacacc37bd6d250aef",
+      "deps": [],
+      "requires": { "webgl2": true },
+      "slots": ["sim", "drawScene"],
+      "params": [
+        { "id": "enabled", "type": "checkbox", "label": "启用", "default": true },
+        { "id": "pointSize", "type": "slider", "label": "粒子大小", "min": 1, "max": 4, "step": 0.1, "default": null },
+        { "id": "audioDrive", "type": "checkbox", "label": "音频驱动", "default": true }
+      ]
+    },
+    "ripple": {
+      "name": "水面涟漪",
+      "description": "半分辨率高度场波动模拟，鼠标移动与点击落点产生水波，对画面做折射扭曲。需要 EXT_color_buffer_float。",
+      "file": "effects/ripple.js",
+      "sha256": "cc49ba20db7755faddbea3ba854dcf1df1c055daf6d1a6af8fed6780daced8d9",
+      "deps": [],
+      "requires": { "webgl2": true, "floatRender": true },
+      "slots": ["sim", "distort"],
+      "params": [
+        { "id": "enabled", "type": "checkbox", "label": "启用", "default": true },
+        { "id": "strength", "type": "slider", "label": "扭曲强度", "min": 0, "max": 200, "step": 10, "default": 100 },
+        { "id": "damp", "type": "slider", "label": "波纹衰减", "min": 0.95, "max": 0.999, "step": 0.001, "default": 0.987 }
+      ]
+    },
+    "bloom": {
+      "name": "泛光",
+      "description": "1/4 分辨率亮部提取 + 分离高斯模糊，加色合成回画面，让亮粒子发光。",
+      "file": "effects/bloom.js",
+      "sha256": "5c85b0f6d682d3c1f13ae9f81ab8d238cceec620b99d2e35281e2f62e6bcd2af",
+      "deps": [],
+      "requires": { "webgl2": true },
+      "slots": ["post", "additive"],
+      "params": [
+        { "id": "enabled", "type": "checkbox", "label": "启用", "default": true },
+        { "id": "threshold", "type": "slider", "label": "亮度阈值", "min": 0, "max": 1, "step": 0.05, "default": 0.5 },
+        { "id": "intensity", "type": "slider", "label": "泛光强度", "min": 0, "max": 1.5, "step": 0.05, "default": 0.85 }
+      ]
+    }
+  }
+}
