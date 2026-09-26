@@ -1,5 +1,5 @@
 {
-  "latest": "2",
+  "latest": "3",
   "versions": [
     {
       "version": "1",
@@ -42,6 +42,28 @@
         "v2/effects/stars.js": "b7882b43a0536888d20dc81eafc1d141030203b4f3f744bf6a50d885a2d2411f",
         "v2/effects.json": "f31272ff3a0736ea53abc20a89860f7558875d4b6aed9699ae8fad7c3268b573",
         "v2/fx-core.js": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3"
+      }
+    },
+    {
+      "version": "3",
+      "date": "2026-09-26",
+      "status": "active",
+      "manifest": {
+        "v3/effects.json": "71dc7621bb36340405e5a24cb230c4633d3219d3583ad09a9a7471521113459e"
+      },
+      "files": {
+        "v3/CHANGELOG.md": "74634c592bd11e4e177d03d68df140eddf416243dd2d3d6adb53d527b37a6435",
+        "v3/effects/aurora.js": "3939ad5defa6a2bcfa10fed3176a82767221510b370c759c2609a4837ef397af",
+        "v3/effects/bloom.js": "5c85b0f6d682d3c1f13ae9f81ab8d238cceec620b99d2e35281e2f62e6bcd2af",
+        "v3/effects/fireflies.js": "84042d6147583f7b929ecc6706c9adfcabf7ed1efdcc6f14b196004627d153c1",
+        "v3/effects/grid.js": "1d656edfca0acd564e08e4475da2775f2c382ebb0bb430a267053058bd130c7b",
+        "v3/effects/particles.js": "ff9b7b40c661cd5290935b1aaede824b90a2aaa685962deacacc37bd6d250aef",
+        "v3/effects/rain.js": "714537a2f20530947a90df7dc5d62ae587ae2395f2e687c7843b1de20a7fe5b0",
+        "v3/effects/ripple.js": "cc49ba20db7755faddbea3ba854dcf1df1c055daf6d1a6af8fed6780daced8d9",
+        "v3/effects/snow.js": "5238fb19a16cdb4e5d6ff2a265582cce0ab8759a45bc487136aab1c55b39b160",
+        "v3/effects/stars.js": "b7882b43a0536888d20dc81eafc1d141030203b4f3f744bf6a50d885a2d2411f",
+        "v3/effects.json": "71dc7621bb36340405e5a24cb230c4633d3219d3583ad09a9a7471521113459e",
+        "v3/fx-core.js": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3"
       }
     }
   ]
