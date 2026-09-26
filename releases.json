@@ -1,11 +1,13 @@
 {
-  "latest": "1",
+  "latest": "2",
   "versions": [
     {
       "version": "1",
       "date": "2026-09-26",
       "status": "active",
-      "manifest": { "v1/effects.json": "b16576b58d6adf9af1600724d7fec2d93ef848c2753a0bc17bd0662024c14f69" },
+      "manifest": {
+        "v1/effects.json": "b16576b58d6adf9af1600724d7fec2d93ef848c2753a0bc17bd0662024c14f69"
+      },
       "files": {
         "v1/fx-core.js": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3",
         "v1/effects.json": "b16576b58d6adf9af1600724d7fec2d93ef848c2753a0bc17bd0662024c14f69",
@@ -23,6 +25,23 @@
         "demos/fx-lab/vendor/effects/ripple.js": "cc49ba20db7755faddbea3ba854dcf1df1c055daf6d1a6af8fed6780daced8d9",
         "demos/fx-lab/vendor/effects/bloom.js": "5c85b0f6d682d3c1f13ae9f81ab8d238cceec620b99d2e35281e2f62e6bcd2af",
         "demos/fx-lab/vendor/effects/stars.js": "b7882b43a0536888d20dc81eafc1d141030203b4f3f744bf6a50d885a2d2411f"
+      }
+    },
+    {
+      "version": "2",
+      "date": "2026-09-26",
+      "status": "active",
+      "manifest": {
+        "v2/effects.json": "f31272ff3a0736ea53abc20a89860f7558875d4b6aed9699ae8fad7c3268b573"
+      },
+      "files": {
+        "v2/CHANGELOG.md": "4430a2acb0b792e719c1d5be54e221da6df8882f529c438e7657ee71234401a9",
+        "v2/effects/bloom.js": "5c85b0f6d682d3c1f13ae9f81ab8d238cceec620b99d2e35281e2f62e6bcd2af",
+        "v2/effects/particles.js": "ff9b7b40c661cd5290935b1aaede824b90a2aaa685962deacacc37bd6d250aef",
+        "v2/effects/ripple.js": "cc49ba20db7755faddbea3ba854dcf1df1c055daf6d1a6af8fed6780daced8d9",
+        "v2/effects/stars.js": "b7882b43a0536888d20dc81eafc1d141030203b4f3f744bf6a50d885a2d2411f",
+        "v2/effects.json": "f31272ff3a0736ea53abc20a89860f7558875d4b6aed9699ae8fad7c3268b573",
+        "v2/fx-core.js": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3"
       }
     }
   ]
