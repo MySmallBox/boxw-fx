@@ -223,10 +223,13 @@
         }
         if (input.drops) input.drops.length = 0;
 
-        // 2. 场景 pass
+        // 2. 场景 pass（每帧清空：加色类特效若无星空/网格等不透明底，
+        //    依赖帧间残留会在几秒内积累饱和成白色）
         gl.bindFramebuffer(gl.FRAMEBUFFER, this.sceneFbo);
         gl.viewport(0, 0, this.sceneW, this.sceneH);
         gl.disable(gl.BLEND);
+        gl.clearColor(0, 0, 0, 1);
+        gl.clear(gl.COLOR_BUFFER_BIT);
         var drewScene = false;
         for (i = 0; i < this.effects.length; i++) {
             fx = this.effects[i];

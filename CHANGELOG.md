@@ -3,6 +3,12 @@
 版本以 git tag 冻结（`vN`），本文件只增不改历史段。v4 起仓库根即最新版本布局
 （fx-core.js + effects/ + effects.json），不再使用 vN 目录副本。
 
+## v5（2026-09-27）
+- fx-core 修复：场景 pass 每帧 `gl.clear`。此前 sceneFbo 从不清空，加色类特效
+  （aurora/snow/rain/fireflies/particles）在未勾选星空/网格等不透明底时，
+  逐帧残留叠加数秒内饱和成全白
+- 特效模块 9 个与 effects.json 条目内容未变（仅 version/core.sha256 随动）
+
 ## v4（2026-09-26）
 - 布局迁移：仓库根 = 唯一源码（tag 寻址后 vN 目录退役），v1-v3 仍可通过各自 tag 拉取
 - 特效集与 v3 相同（9 个），内容未变

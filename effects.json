@@ -1,8 +1,8 @@
 {
-  "version": "4",
+  "version": "5",
   "core": {
     "file": "fx-core.js",
-    "sha256": "04f4a2b1ced89bff5efd3cbc11acee1d32d6827a0abf525d811a640a4a9c8cf3"
+    "sha256": "0bd924428dc26b7c35697a84ddc3dddfe132f10f28f67caf5e592edb1c17a75d"
   },
   "effects": {
     "stars": {
