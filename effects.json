@@ -1,5 +1,5 @@
 {
-  "version": "5",
+  "version": "6",
   "core": {
     "file": "fx-core.js",
     "sha256": "0bd924428dc26b7c35697a84ddc3dddfe132f10f28f67caf5e592edb1c17a75d"
@@ -372,6 +372,112 @@
           "max": 4,
           "step": 0.1,
           "default": 2
+        }
+      ]
+    },
+    "sakura": {
+      "name": "樱花飘落",
+      "description": "精灵贴图花瓣：局部椭圆发射区+寿命淡入淡出+3D 翻面+风场摆动+前景景深虚化。需要素材 assets/sakura/atlas.png（脚手架自动拷贝）。",
+      "category": "粒子",
+      "file": "effects/sakura.js",
+      "sha256": "e470271ed17adf1fb60e77e17fac96c8e5596ea70413d53c57a0e09f980aec26",
+      "deps": [],
+      "assets": [
+        {
+          "file": "assets/sakura/atlas.png",
+          "sha256": "5f835ea7c8e0636286e2c21cc26b2c5b3559241289fd1b1409c187ee2d195ed3"
+        }
+      ],
+      "requires": {
+        "webgl2": true
+      },
+      "slots": [
+        "drawScene"
+      ],
+      "params": [
+        {
+          "id": "enabled",
+          "type": "checkbox",
+          "label": "启用",
+          "default": true
+        },
+        {
+          "id": "count",
+          "type": "slider",
+          "label": "数量",
+          "min": 20,
+          "max": 600,
+          "step": 20,
+          "default": 160
+        },
+        {
+          "id": "spawnX",
+          "type": "slider",
+          "label": "发射中心X",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50
+        },
+        {
+          "id": "spawnY",
+          "type": "slider",
+          "label": "发射中心Y",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 30
+        },
+        {
+          "id": "spawnR",
+          "type": "slider",
+          "label": "扩散半径",
+          "min": 5,
+          "max": 80,
+          "step": 5,
+          "default": 25
+        },
+        {
+          "id": "wind",
+          "type": "slider",
+          "label": "风力（负为左）",
+          "min": -100,
+          "max": 100,
+          "step": 10,
+          "default": 15
+        },
+        {
+          "id": "fall",
+          "type": "slider",
+          "label": "飘落速度",
+          "min": 0,
+          "max": 200,
+          "step": 10,
+          "default": 60
+        },
+        {
+          "id": "size",
+          "type": "slider",
+          "label": "花瓣大小",
+          "min": 20,
+          "max": 200,
+          "step": 10,
+          "default": 100
+        },
+        {
+          "id": "tint",
+          "type": "slider",
+          "label": "粉度",
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "default": 40
+        },
+        {
+          "id": "bokeh",
+          "type": "checkbox",
+          "label": "前景虚化",
+          "default": true
         }
       ]
     }

@@ -3,6 +3,14 @@
 版本以 git tag 冻结（`vN`），本文件只增不改历史段。v4 起仓库根即最新版本布局
 （fx-core.js + effects/ + effects.json），不再使用 vN 目录副本。
 
+## v6（2026-09-27）
+- 新增 sakura 樱花飘落：精灵贴图粒子（AI 花瓣图集），局部椭圆发射区 + 寿命淡入淡出 +
+  3D 翻面（镜像 UV 假背面 + 宽度下限防边缘细条）+ 风场摆动 + 三层景深（前景失焦 sprite）
+- 新增 assets 机制：effects.json 条目可声明 `assets:[{file,sha256}]`，随依赖闭包拉取，
+  脚手架生成时拷贝到壁纸根目录（vendor/ 之外）；首个使用者为 sakura
+- 素材：assets/sakura/atlas.png（768x768，3x3 单元格，0-5 清晰 / 6-8 失焦）
+- 其余 9 个特效与 fx-core.js 逐字节同 v5
+
 ## v5（2026-09-27）
 - fx-core 修复：场景 pass 每帧 `gl.clear`。此前 sceneFbo 从不清空，加色类特效
   （aurora/snow/rain/fireflies/particles）在未勾选星空/网格等不透明底时，
